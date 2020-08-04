@@ -13,6 +13,8 @@
 		60F7739424D8B0CA00B40F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F7739224D8B0CA00B40F8E /* Main.storyboard */; };
 		60F7739624D8B0CD00B40F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F7739524D8B0CD00B40F8E /* Assets.xcassets */; };
 		60F7739924D8B0CD00B40F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F7739724D8B0CD00B40F8E /* LaunchScreen.storyboard */; };
+		60F773A124D8F7F200B40F8E /* convertingCurrencyTextFileId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F773A024D8F7F200B40F8E /* convertingCurrencyTextFileId.swift */; };
+		60F773A724D8FBA500B40F8E /* convertCurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F773A624D8FBA500B40F8E /* convertCurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		60F7739524D8B0CD00B40F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60F7739824D8B0CD00B40F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60F7739A24D8B0CD00B40F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F773A024D8F7F200B40F8E /* convertingCurrencyTextFileId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = convertingCurrencyTextFileId.swift; sourceTree = "<group>"; };
+		60F773A624D8FBA500B40F8E /* convertCurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = convertCurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		60F7738024D8B0CA00B40F8E = {
 			isa = PBXGroup;
 			children = (
+				60F773A524D8FB3E00B40F8E /* Supporting Files */,
 				60F7738B24D8B0CA00B40F8E /* conversionofexchange */,
 				60F7738A24D8B0CA00B40F8E /* Products */,
 			);
@@ -59,12 +64,21 @@
 				60F7738C24D8B0CA00B40F8E /* AppDelegate.swift */,
 				60F7738E24D8B0CA00B40F8E /* SceneDelegate.swift */,
 				60F7739024D8B0CA00B40F8E /* ViewController.swift */,
+				60F773A024D8F7F200B40F8E /* convertingCurrencyTextFileId.swift */,
 				60F7739224D8B0CA00B40F8E /* Main.storyboard */,
 				60F7739524D8B0CD00B40F8E /* Assets.xcassets */,
 				60F7739724D8B0CD00B40F8E /* LaunchScreen.storyboard */,
 				60F7739A24D8B0CD00B40F8E /* Info.plist */,
 			);
 			path = conversionofexchange;
+			sourceTree = "<group>";
+		};
+		60F773A524D8FB3E00B40F8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60F773A624D8FBA500B40F8E /* convertCurrencyTextField.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F7739124D8B0CA00B40F8E /* ViewController.swift in Sources */,
+				60F773A124D8F7F200B40F8E /* convertingCurrencyTextFileId.swift in Sources */,
+				60F773A724D8FBA500B40F8E /* convertCurrencyTextField.swift in Sources */,
 				60F7738D24D8B0CA00B40F8E /* AppDelegate.swift in Sources */,
 				60F7738F24D8B0CA00B40F8E /* SceneDelegate.swift in Sources */,
 			);
