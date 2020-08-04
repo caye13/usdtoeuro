@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y7-yg-Vrs">
-                                        <rect key="frame" x="26" y="19" width="109" height="85"/>
+                                        <rect key="frame" x="26" y="44" width="109" height="85"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                         <color key="textColor" red="0.59415876869999995" green="0.71930503850000005" blue="0.94905012850000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -27,7 +27,6 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="104" id="D6O-iZ-fbr"/>
                                     <constraint firstItem="7Y7-yg-Vrs" firstAttribute="leading" secondItem="vPY-UM-nPJ" secondAttribute="leading" constant="26" id="V3N-5g-0Dp"/>
                                     <constraint firstAttribute="bottom" secondItem="7Y7-yg-Vrs" secondAttribute="bottom" id="tnd-Ts-zYB"/>
                                 </constraints>
@@ -47,7 +46,7 @@
                                                         <color key="textColor" red="0.59415876869999995" green="0.71930503850000005" blue="0.94905012850000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omC-aW-YWc">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omC-aW-YWc" customClass="ConvertCurrencyTextField" customModule="conversionofexchange" customModuleProvider="target">
                                                         <rect key="frame" x="204" y="0.0" width="126" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="126" id="HGS-kC-Hgk"/>
@@ -60,7 +59,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E8R-9M-CEv">
                                                 <rect key="frame" x="0.0" y="86" width="330" height="31"/>
                                                 <subviews>
-                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="N2W-bD-7jw" customClass="convertCurrenyTextField">
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="N2W-bD-7jw">
                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="32"/>
                                                         <segments>
                                                             <segment title="Euro"/>
@@ -97,14 +96,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZBb-Zm-5Iq">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="25.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="US Dollars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyX-14-r9w">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="25.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="US Dollars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyX-14-r9w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="265.5" height="25.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                                                         <color key="textColor" red="0.59415876869999995" green="0.71930503850000005" blue="0.94905012850000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah8-La-hwJ">
-                                                        <rect key="frame" x="101.5" y="0.0" width="228.5" height="25.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah8-La-hwJ">
+                                                        <rect key="frame" x="273.5" y="0.0" width="56.5" height="25.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -114,13 +113,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="siu-4j-hsX">
                                                 <rect key="frame" x="0.0" y="81.5" width="330" height="31.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Euros" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-JM-qit">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euros" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-JM-qit">
                                                         <rect key="frame" x="0.0" y="0.0" width="62" height="31.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                                         <color key="textColor" red="0.59415876869999995" green="0.71930503850000005" blue="0.94905012850000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="€0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlX-St-05A">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="€0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlX-St-05A">
                                                         <rect key="frame" x="70" y="0.0" width="260" height="31.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                                         <nil key="textColor"/>
@@ -186,7 +185,7 @@
                         <outlet property="titleLabel" destination="7Y7-yg-Vrs" id="VEd-j9-VjV"/>
                         <outlet property="usDollarLabel" destination="Ah8-La-hwJ" id="ucx-DU-Cg5"/>
                         <outlet property="usDollarTitleLabel" destination="MyX-14-r9w" id="Cqq-tD-ufH"/>
-                        <outlet property="usdTextField" destination="omC-aW-YWc" id="aBy-Qm-4tG"/>
+                        <outlet property="usdTextField" destination="omC-aW-YWc" id="DrI-wZ-MfS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

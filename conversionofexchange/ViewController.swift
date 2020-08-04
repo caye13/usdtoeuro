@@ -6,6 +6,7 @@
 //  Copyright © 2020 caye. All rights reserved.
 //
 
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -15,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var inputCardView: UIView!
-    @IBOutlet weak var usdTextField: convertCurrencyTextField!
+    @IBOutlet weak var usdTextField: ConvertCurrencyTextField!
     @IBOutlet weak var euroAndPoundSterlingSegmentedControl: UISegmentedControl!
     
     @IBOutlet weak var outputCardView: UIView!
@@ -87,7 +88,7 @@ class ViewController: UIViewController {
         usDollarLabel.text = "$0.00"
         convertedAmountLabel.text = "€0.00"
     }
-//}
+
 
 }
 
