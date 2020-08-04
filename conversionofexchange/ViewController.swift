@@ -62,9 +62,11 @@ class ViewController: UIViewController {
                    case 0:
                     usdConvertPercent = 0.85
                     convertedAmountTitleLabel.text = "Euros"
+                    convertedAmountLabel.text = "€0.00"
                    case 1:
                        usdConvertPercent = 0.76
                        convertedAmountTitleLabel.text = "Pound Sterlings"
+                       convertedAmountLabel.text = "£0.00"
                    default:
                        preconditionFailure("Unexpected index.")
                    }
