@@ -34,7 +34,6 @@ class ViewController: UIViewController {
         usdTextField.calculateButtonAction = {
             self.calculate()
        }
-        // Do any additional setup after loading the view.
     }
     
     
